@@ -1,0 +1,19 @@
+#***************User Service App***************
+#**********Developed By KhaledMoazedi**********
+#**********email:xhmoazedi@gmail.com***********
+#config file keeps neccesery configurations of this service
+
+
+
+# "service" key, holds main service config data
+user_config:
+    service_name: "user"
+    http_port: 9876
+    base_url: "http://localhost"
+
+
+# database configs 
+scylladb:
+  addresses: ["localhost:9042"]
+  keyspace: "user"
+  table_name: "users"
